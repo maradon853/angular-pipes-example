@@ -1,5 +1,6 @@
 <div style="text-align:center">
   <h1>Welcome to {{ title | uppercase }}</h1>
+  <h1>My cat's name backwards is {{ kitty | merlin }}</h1>
 </div>
 
 <div class="formwidth fluid-container">
@@ -18,6 +19,14 @@
       </div>
       <div class="number col-md-3">
         {{ phNumber | phonenumber }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        Address:
+      </div>
+      <div class="name col-md-3">
+        <span>{{ address | lowercase }}</span>
       </div>
     </div>
   </div>
